@@ -1,0 +1,72 @@
+1. What is `NPM`?
+NPM is a package manager for all the modules and packages that are used in a projects.
+NPM is used for installing packages and publishing our own packages as well.
+
+2. What is `Parcel/Webpack`? Why do we need it?
+Parcel/Webpack is a bundler that means all the javascript code written in different files and folders
+including all the dependencies and packages are bundled and minified in a single file which is then given
+to the browser.
+They provide many different advantges like Hot Module Replacement, Caching etc.
+
+3. What is `.parcel-cache`?
+This is a directory which is created when the build of the project is created. Parcel stored information
+about the project like what dependencies are being used. For the first build, parcel takes time but for the
+subsequent builds it will take lesser time as it will use the cache already created.
+
+4. What is `npx` ?
+npx is tool which allows to run executables from the packages without letting the packages to be installed
+globally. It also automatically installs the package if not installed already.
+
+5. What is difference between `dependencies` vs `devDependencies`?
+The devDependencies are those dependencies which are installed only the developer machine but dependencies on the
+other hand project depends to run everywhere.
+
+6. What is Tree Shaking?
+Tree Shaking is also called Dead Code Elimination. Parcel analyzes all the modules for imports and exports
+and eliminates all the things which are unused. Works for both dynamic and static imports.
+
+7. What is Hot Module Replacement?
+When the developer saves the project then parcel automatically updates the modules in runtime without letting
+the developer to reload the page.
+
+8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+
+i -> File Watcher algorithm: Parcel keeps analyzing the files and automatically updates the changes which
+are being made ny the developer in the project.
+ii -> Caching while development -> Caching improves the performance of the application. Once cache has
+been created then the subsequent builds will take lesser time which makes the application faster.
+iii -> Zero configuration bundler -> No configuration is required in order to use parcel in the application.
+iv -> Tree Shaking
+v -> Hot Module Replacement
+
+9. What is `.gitignore`? What should we add and not add into it?
+.gitignore is a file in which those files are added which are not supossed to be tracked by git while
+pushing to the git repository.
+
+10. What is the difference between `package.json` and `package-lock.json`
+package.json defines all the packages and modules with their version on which the application is running on
+and also defines all the scripts which are created by the developers. It contains all the metadata about the
+application
+
+package-lock.json file is generated automatically which contains locks the versions of the dependencies
+on the which the application is running and also contains the record of all the dependencies and their dependencies
+on which the application is running. So when someone will install the project they will have the same
+version of the dependencies.
+
+11. Why should I not modify `package-lock.json`?
+If package-lock.json is modified then it might lead to inconsistency and conflicts in the versions of the dependencies
+and may cause problem is successful installation of the application.
+
+12. What is `node_modules` ? Is it a good idea to push that on git?
+node_modules is a folder where all the dependencies and dependencies of the dependencies resides.
+The node_modules folder can be regenerated so it can be avoided while pushing.
+
+13. What is the `dist` folder?
+dist is the folder which is created when the build of the application is created. It contains the bundled
+and minified code. It contains all the assets of the application all the images and media which is
+processed and optimized as part of the build.
+
+14. What is `browserlists`?
+It is a package which defines the list of browsers on which the application will work. The developer
+can define the list of browsers manualy on which the devleoper wants the application to be working.
