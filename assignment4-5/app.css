@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 8em;
+  object-fit: contain;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 1.2em;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cards-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 4em;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -22px;
+}
+
+.search-section {
+  width: 30%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  gap: 1em;
+}
+
+input {
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+input:focus {
+  color: royalblue;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+button:hover {
+  background-color: white;
+  color: blue;
+  border: 1px solid black;
+}
